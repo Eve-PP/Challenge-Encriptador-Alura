@@ -1,0 +1,38 @@
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+
+body {
+    background-color: rosybrown;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 4%;
+   
+    
+}
+
+.divisiones{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.color_1{
+    background-color: aqua;
+    
+    flex-grow: 0;
+    
+    
+    
+
+}
+
+.color_2{
+
+    background-color: blue;
+    flex-grow: 0;
+}

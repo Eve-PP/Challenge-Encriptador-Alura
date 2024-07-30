@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador_Alura_Challenge</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./imagenes/Logo.png">
+    </header> 
+
+
+
+    <main class="aplicacion">
+        <section class="aplicacion_ingreso">
+            
+            <h1>Encriptador Alura</h1>
+
+            
+            
+            <textarea name="texto_entrada" id="texto_entrada"class="aplicacion_ingreso_texto" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            
+           
+           
+           
+            <div class="aplicacion_ingreso_indicacion">
+                <img src="./imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
+                <p>Solo letras minúsculas y sin acentos</p>
+           </div>
+            <div class="aplicacion_ingreso_botones">
+                <button onclick="encriptar();" class="boton_ingreso_e" id="encriptar">Encriptar|</button>
+                <button onclick="desencriptar();" class="boton_ingreso_d" id="desencriptar"> Desencriptar</button>
+            </div>
+      
+           
+        </section>
+        
+        <section class ="aplicacion_resultado">
+            
+            <img class="aplicacion_resultado_imagen_0" id="img_0" src="./imagenes/Muneco.png" alt="niño esperando texto">
+            <p class="aplicacion_resultado_texto_inicial" id="text_0_1">Ningún mensaje fue encontrado</p>
+            <p class="aplicacion_resultado_texto_indicativo" id="text_0_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button onclick="desencriptar();" class="botone_copiar" id="desencriptar" disabled> Copiar </button> 
+        
+        </section>
+    </main>
+    
+
+    <script src="apps.js">
+    </script>
+      
+
+    <footer class="footer">
+        <p>Desarrollado por Evelyn P. para Challenge Alura Latam</p>
+    </footer>   
+
+
+
+
+</body>
+
+
+</html>
