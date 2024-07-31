@@ -16,132 +16,173 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
-    color: darkblue;
-    font-size: 38px;
-}
-
-
 
 .aplicacion{
     display: flex;
     margin: 2%;
-    justify-content: space-between;
+    
 }
 
 .aplicacion_ingreso{
+    width: 75%;
     display: flex;
     flex-direction: column;
+    padding: 1% 6% 1% 10%;
+    
     
     
 }
 
+.aplicacion_ingreso_contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+
+    
+
+}
+
+h1 {
+
+    height: 10%;
+    color:#0A3871; 
+    font-size: 2.4rem;
+}
 
 
 
 .aplicacion_ingreso_texto {
+    height:82%;
     background: transparent;
     color:#0A3871;
     resize: none;
     border: 0 none;
     outline: none;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: "Inter", sans-serif;
     
-    
-
-    
-    
-  }
+}
 
 
 .aplicacion_ingreso_indicacion{
-
+    height: 8%;
     color: #495057;    
     display: flex;
-    font-size: 12px;
-    font-family: "Inter", sans-serif;
-
-    
+    align-items: center;
+    gap:1%;
+    font-size: 0.75rem;
+    font-family: "Inter", sans-serif;  
 }
 
 
 .aplicacion_ingreso_botones{
+    height: 15%;
     display: flex;
     justify-content: space-between;
-
-    
-
-}
-
-.aplicacion_resultado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-radius: 32px;
-
-    width: 400px;
-    height: 994px;
-    
-    box-sizing: border-box;
-   
-    
-
-   
-}
-
-.aplicacion_resultado_texto_inicial{
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    font-weight:bold ;
-    color: #343A40;
-    
-
-}
-
-.aplicacion_resultado_texto_indicativo{
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    color: #495057;
-    
-    
-
-}
-
-.aplicacion_resultado_imagen_0{
-
-    width: 336px;
-    height: 304px;
-}
-
-h2{
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    color: #343A40;
-    font-weight: 400;
-    
-
 }
 
 button{
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-family: "Inter", sans-serif;
-    font-size: 16;
-}
 
+    width: 90%;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    height: 100%;
+    background-color: white;
+}
 .boton_ingreso_e{
     background-color: #0A3871;
     color: #D8DFE8;
-    
+    width: 45%;
+
 }
 
 .boton_ingreso_d{
     background-color: #D8DFE8;
     color: #0A3871;
+    width: 45%;
+
+
 }
+
+
+
+
+
+.aplicacion_resultado {
+    background-color: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    padding: 1% 1% 1% 1%;
+
+}
+
+
+.aplicacion_resultados_visualizacion{
+
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+
+.aplicacion_resultado_imagen_0{
+
+    width: 50%;
+    
+}
+
+
+.aplicacion_resultado_texto_inicial{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight:bold ;
+    color: #343A40;
+}
+
+.aplicacion_resultado_texto_final{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #495057;
+    
+    
+    
+}
+
+.aplicacion_resultado_texto_indicativo{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: #495057;
+    
+}
+
+
+
+
+
+
+
+
+
+.aplicaicon_resultado_boton{
+
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+
+
 
 .footer{
     background-color: lightskyblue;
