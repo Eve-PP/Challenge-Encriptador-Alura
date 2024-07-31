@@ -19,22 +19,16 @@
 
     <main class="aplicacion">
         <section class="aplicacion_ingreso">
-            
-            <h1>Encriptador Alura</h1>
-
-            
-            
-            <textarea name="texto_entrada" id="texto_entrada"class="aplicacion_ingreso_texto" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            
-           
-           
-           
-            <div class="aplicacion_ingreso_indicacion">
-                <img src="./imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
-                <p>Solo letras minúsculas y sin acentos</p>
-           </div>
+            <div class="aplicacion_ingreso_contenedor">
+                <h1>Encriptador Alura</h1>         
+                <textarea name="texto_entrada" id="texto_entrada"class="aplicacion_ingreso_texto" rows="10" placeholder="Ingrese el texto aqui"></textarea>    
+                <div class="aplicacion_ingreso_indicacion">
+                    <img src="./imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
             <div class="aplicacion_ingreso_botones">
-                <button onclick="encriptar();" class="boton_ingreso_e" id="encriptar">Encriptar|</button>
+                <button onclick="encriptar();" class="boton_ingreso_e" id="encriptar">Encriptar</button>
                 <button onclick="desencriptar();" class="boton_ingreso_d" id="desencriptar"> Desencriptar</button>
             </div>
       
@@ -42,12 +36,17 @@
         </section>
         
         <section class ="aplicacion_resultado">
+
+            <div class="aplicacion_resultados_visualizacion">
+                <img class="aplicacion_resultado_imagen_0" id="img_0" src="./imagenes/Muneco.png" alt="niño esperando texto">
+                <p class="aplicacion_resultado_texto_inicial" id="text_0_1">Ningún mensaje fue encontrado</p>
+                <p class="aplicacion_resultado_texto_indicativo" id="text_0_2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
             
-            <img class="aplicacion_resultado_imagen_0" id="img_0" src="./imagenes/Muneco.png" alt="niño esperando texto">
-            <p class="aplicacion_resultado_texto_inicial" id="text_0_1">Ningún mensaje fue encontrado</p>
-            <p class="aplicacion_resultado_texto_indicativo" id="text_0_2">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button onclick="desencriptar();" class="botone_copiar" id="desencriptar" disabled> Copiar </button> 
-        
+            <div class="aplicaicon_resultado_boton" id="ubicacion">
+        <!--"espacio" para boton copiar-->
+            </div>
+
         </section>
     </main>
     

@@ -1,4 +1,3 @@
-
 //let mensaje = document.getElementById('texto_entrada').value;
 //let mensaje= "fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober";
 mensaje = "aaaaaa";
@@ -31,20 +30,36 @@ function mostrar_resultado_x(){
 
     if(aux2==0){
         let respuesta = document.getElementById("img_0");
-        respuesta.outerHTML = `<h2> ${mensaje_cifrado} </h2>`;
+        respuesta.outerHTML = `<p class="aplicacion_resultado_texto_final"> ${mensaje_cifrado} </p>`;
             
         let elem1 = document.getElementById("text_0_1");
         elem1.remove();
     
         let elem2 = document.getElementById("text_0_2");
         elem2.remove();
-    }else{
-        let respuesta = document.querySelector("h2");
-        respuesta.innerText = mensaje_cifrado;
-    }
 
+        insertar_boton();
+
+    }else{
+        let respuesta = document.querySelector("p.aplicacion_resultado_texto_final");
+        respuesta.innerText = mensaje_cifrado;
+    };
+
+    
+    
+    
 
 }
+
+
+function insertar_boton(){
+
+    const copiar = document.createElement("button");
+    copiar.innerHTML = "Copiar";
+    document.querySelector("div.aplicaicon_resultado_boton").appendChild(copiar);
+
+}
+
 
 
 
