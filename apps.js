@@ -56,7 +56,7 @@ function insertar_boton(){
 
     const copiar = document.createElement("button");
     copiar.innerHTML = "Copiar";
-    document.querySelector("div.aplicaicon_resultado_boton").appendChild(copiar);
+    document.querySelector("div.aplicacion_resultado_boton").appendChild(copiar);
 
 }
 

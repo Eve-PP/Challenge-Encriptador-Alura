@@ -4,55 +4,67 @@
 * {
     padding: 0;
     margin:0;
+    
 }
 
 header{
-    background-color: lightskyblue;
+    background-color: rgb(150, 250, 135);
 }
 
+
 body {
-    background-color: #E5E5E5;
-    height: 100vh;
+    background-color: #F3F5FC;
     box-sizing: border-box;
+   
+    /*medidas body segu figma
+    width: 1440px;
+    height: 1024px;*/
+    padding: 2.8015%;
 }
 
 
 .aplicacion{
     display: flex;
-    margin: 2%;
+    height: 100%;
+    width: 100%;
     
 }
 
 .aplicacion_ingreso{
-    width: 75%;
+    width: 70.589%;
     display: flex;
     flex-direction: column;
-    padding: 1% 6% 1% 10%;
-    
-    
-    
+    /*padding: 0% 5.883% 2.353% 0%;*/
+        
 }
 
-.aplicacion_ingreso_contenedor{
+
+.aplicacion_ingreso_titulo{
     display: flex;
-    flex-direction: column;
-    height: 85%;
-
-    
-
+    align-items: center;
+    height: 17.797%;
 }
+
 
 h1 {
-
     height: 10%;
     color:#0A3871; 
     font-size: 2.4rem;
 }
 
+.aplicacion_ingreso_contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 71.717%;
+    padding: 0% 8.334% 0% 20.834%;
+
+}
+
+
 
 
 .aplicacion_ingreso_texto {
-    height:82%;
+    height:92%;
     background: transparent;
     color:#0A3871;
     resize: none;
@@ -60,6 +72,8 @@ h1 {
     outline: none;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    
     
 }
 
@@ -68,22 +82,26 @@ h1 {
     height: 8%;
     color: #495057;    
     display: flex;
-    align-items: center;
+    align-items:center;
     gap:1%;
     font-size: 0.75rem;
     font-family: "Inter", sans-serif;  
+
 }
 
 
 .aplicacion_ingreso_botones{
-    height: 15%;
+    height: 7.098%;
     display: flex;
     justify-content: space-between;
+    padding: 0% 8.334% 0% 20.834%;
+    gap: 1.5rem;
+    
 }
 
 button{
 
-    width: 90%;
+    width: 20.5rem;
     border-radius: 1.5rem;
     font-size: 1rem;
     height: 100%;
@@ -92,14 +110,14 @@ button{
 .boton_ingreso_e{
     background-color: #0A3871;
     color: #D8DFE8;
-    width: 45%;
+    
 
 }
 
 .boton_ingreso_d{
     background-color: #D8DFE8;
     color: #0A3871;
-    width: 45%;
+    
 
 
 }
@@ -110,22 +128,24 @@ button{
 
 .aplicacion_resultado {
     background-color: white;
-    width: 25%;
+    width: 29.412%;
     display: flex;
     flex-direction: column;
     border-radius: 2rem;
-    padding: 1% 1% 1% 1%;
+    padding: 2.353% 0% 2.353% 0%;
+
 
 }
 
 
 .aplicacion_resultados_visualizacion{
 
-    height: 85%;
+    height: 92.387%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box
     
    
 
@@ -133,8 +153,27 @@ button{
 
 .aplicacion_resultado_imagen_0{
 
-    width: 50%;
+    padding: 0% 8% 8% 8% ;
+    width: 84%;
+    /*
+    width: 21rem;
+    height: 19rem;
+
+*/
+
+}
+.aplicacion_resultado_texto{
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 84%;
+
+
+
 }
 
 
@@ -145,14 +184,6 @@ button{
     color: #343A40;
 }
 
-.aplicacion_resultado_texto_final{
-    font-family: "Inter", sans-serif;
-    font-size: 1.5rem;
-    color: #495057;
-    
-    
-    
-}
 
 .aplicacion_resultado_texto_indicativo{
     font-family: "Inter", sans-serif;
@@ -161,17 +192,21 @@ button{
     
 }
 
+.aplicacion_resultado_texto_final{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #495057;
+   
+    
+    
+    
+    
+}
 
 
+.aplicacion_resultado_boton{
 
-
-
-
-
-
-.aplicaicon_resultado_boton{
-
-    height: 15%;
+    height: 7.614%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,13 +215,77 @@ button{
 }
 
 
-
-
-
-
-.footer{
+/*.footer{
     background-color: lightskyblue;
     color: darkblue;
     align-items: center;
 
-}
+}*/
+
+
+
+
+@media (max-width: 100px){
+    .aplicacion{
+        
+        flex-direction: column;
+        margin: 0% ;
+        
+    }
+
+    .aplicacion_ingreso{
+        width: 100%;
+        height: 70%;
+        padding: 0% 0% 0% 0%;
+        margin: 10% 10% 5% 10%;
+    }
+
+   
+    .aplicacion_ingreso_contenedor{
+        display: flex;
+        flex-direction: column;
+        height: 71,43%;
+
+    }
+    
+    .aplicacion_ingreso_botones{
+        height: 28,57%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+    button{
+        height: 95%;
+    }
+
+    .boton_ingreso_e{
+
+        width: 100%;
+        height: 95%;
+    }
+
+    .boton_ingreso_d{
+        width: 100%;
+        height: 95%;
+
+
+    }
+
+    .aplicacion_resultado {
+        width: 100%;
+        height: 30%;
+        margin: 5% 10% 10% 10%;
+
+    }
+
+    .aplicacion_resultados_visualizacion{
+        height: 5%;;   
+    }
+
+    .aplicacion_resultado_imagen_0{
+        visibility: hidden;
+    }
+
+    }
