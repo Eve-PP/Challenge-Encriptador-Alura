@@ -134,7 +134,7 @@ button{
     flex-direction: column;
     border-radius: 2rem;
     padding: 2.353% 0% 2.353% 0%;
-    box-shadow: 0rem 1rem 1rem lightblue;
+    box-shadow: 0rem 0.5rem 0.5rem lightblue;
 
 
 }
@@ -229,67 +229,62 @@ button{
 
 
 
-@media (max-width: 100px){
+@media (max-width: 768px){
+
+    body {
+        
+        /*width: 768px;
+        height: 1174px;
+        padding:40px;
+        padding: 2.8015%;*/
+
+        width: 688px;
+        height: 1094px;
+        padding: 0px;
+
+
+    }
+
     .aplicacion{
         
         flex-direction: column;
-        margin: 0% ;
-        
+           
     }
+
 
     .aplicacion_ingreso{
         width: 100%;
-        height: 70%;
-        padding: 0% 0% 0% 0%;
-        margin: 10% 10% 5% 10%;
+        height: 87.843%;
+        /*padding: 0% 5.883% 2.353% 0%;*/
+                   
     }
 
-   
     .aplicacion_ingreso_contenedor{
-        display: flex;
-        flex-direction: column;
-        height: 71,43%;
-
-    }
+        padding: 0% 0% 0% 0%;
     
+    }
     .aplicacion_ingreso_botones{
-        height: 28,57%;
-        display: flex;
-        flex-direction: column;
         
+        padding: 0% 0% 0% 0%;
+        gap: 1.5rem;
         
     }
     
     button{
-        height: 95%;
-    }
-
-    .boton_ingreso_e{
 
         width: 100%;
-        height: 95%;
+        
     }
 
-    .boton_ingreso_d{
-        width: 100%;
-        height: 95%;
-
-
-    }
 
     .aplicacion_resultado {
+        height: 12.157%;
         width: 100%;
-        height: 30%;
-        margin: 5% 10% 10% 10%;
-
     }
-
-    .aplicacion_resultados_visualizacion{
-        height: 5%;;   
-    }
-
+    
     .aplicacion_resultado_imagen_0{
         visibility: hidden;
+        padding: 0% 0% 0% 0% ;
     }
 
-    }
+}
