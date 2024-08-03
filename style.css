@@ -135,6 +135,7 @@ button{
     border-radius: 2rem;
     padding: 2.353% 0% 2.353% 0%;
     box-shadow: 0rem 0.5rem 0.5rem lightblue;
+    
 
 
 }
@@ -146,7 +147,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:baseline;
+    justify-content:center;
     box-sizing: border-box
     
    
@@ -155,7 +156,7 @@ button{
 
 .aplicacion_resultado_imagen_0{
 
-    padding: 52.75% 8% 8% 8% ;
+    padding: 0% 8% 8% 8% ;
     width: 84%;
     /*
     width: 21rem;
@@ -229,21 +230,25 @@ button{
 
 
 
-@media (max-width: 768px){
+/*@media ( 375px >= width >= 768px) {*/
+
+@media (min-width: 375px) and (max-width : 768px) {
 
     body {
         
-        /*width: 768px;
         height: 1174px;
-        padding:40px;
-        padding: 2.8015%;*/
-
+        width: 768px;
+         
+        
+       /* padding: 2.8015%;
+            height: 1174px;
+            width: 768px;
         width: 688px;
         height: 1094px;
-        padding: 0px;
+        padding: 0px;*/
 
 
-    }
+    } 
 
     .aplicacion{
         
@@ -254,7 +259,7 @@ button{
 
     .aplicacion_ingreso{
         width: 100%;
-        height: 87.843%;
+        height: 87%;
         /*padding: 0% 5.883% 2.353% 0%;*/
                    
     }
@@ -273,18 +278,115 @@ button{
     button{
 
         width: 100%;
+       
         
     }
 
 
     .aplicacion_resultado {
-        height: 12.157%;
+        height: 17%;
         width: 100%;
     }
     
     .aplicacion_resultado_imagen_0{
         visibility: hidden;
         padding: 0% 0% 0% 0% ;
+        height: 3%;
+        
+
     }
 
+    .aplicacion_resultado_texto{
+    width: 100%;
+    }
+
+    .aplicacion_resultado_boton{
+        height: 67px;
+    
+    }
+
+   
+
 }
+
+@media (max-width:375px){
+
+    body {
+        
+        height: 894px;
+        width: 375px;
+         
+        
+       /* padding: 2.8015%;
+            height: 1174px;
+            width: 768px;
+        width: 688px;
+        height: 1094px;
+        padding: 0px;*/
+
+
+    } 
+
+    .aplicacion{
+        
+        flex-direction: column;
+           
+    }
+
+
+    .aplicacion_ingreso{
+        width: 100%;
+        height: 87%;
+        /*padding: 0% 5.883% 2.353% 0%;*/
+                   
+    }
+
+    .aplicacion_ingreso_contenedor{
+        padding: 0% 0% 0% 0%;
+    
+    }
+    .aplicacion_ingreso_botones{
+        
+        padding: 0% 0% 0% 0%;
+        gap: 1.5rem;
+        flex-direction: column;
+        
+    }
+    
+    button{
+
+        width: 100%;
+       
+        
+    }
+
+
+    .aplicacion_resultado {
+        height: 17%;
+        width: 100%;
+    }
+    
+    .aplicacion_resultado_imagen_0{
+        visibility: hidden;
+        padding: 0% 0% 0% 0% ;
+        height: 3%;
+        
+
+    }
+
+    .aplicacion_resultado_texto{
+    width: 100%;
+    }
+
+    .aplicacion_resultado_boton{
+        height: 67px;
+    
+    }
+
+
+
+    }
+
+
+
+
