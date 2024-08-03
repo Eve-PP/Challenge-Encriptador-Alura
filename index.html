@@ -20,12 +20,15 @@
     <main class="aplicacion">
         <section class="aplicacion_ingreso">
             <div class="aplicacion_ingreso_titulo">
-                <img src="./imagenes/Logo.png">
+                <picture>
+                    <source srcset="./imagenes/Top.png" media="(max-width: 768px)">
+                    <img src="./imagenes/Logo.png">
+                </picture>
                 <h1>Encriptador Alura</h1>    
             </div>
             <div class="aplicacion_ingreso_contenedor">
                          
-                <textarea name="texto_entrada" id="texto_entrada"class="aplicacion_ingreso_texto" rows="10" placeholder="Ingrese el texto aqui"></textarea>    
+                <textarea name="texto_entrada" id="texto_entrada"class="aplicacion_ingreso_texto" placeholder="Ingrese el texto aqui"></textarea>    
                 <div class="aplicacion_ingreso_indicacion">
                     <img src="./imagenes/bi_exclamation-circle-fill.png" alt="signo de exclamacion">
                     <p>Solo letras minúsculas y sin acentos</p>
