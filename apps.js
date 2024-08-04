@@ -30,8 +30,8 @@ function mostrar_resultado_x(){
 
     if(aux2==0){
         let respuesta = document.getElementById("img_0");
-        respuesta.outerHTML = `<p class="aplicacion_resultado_texto_final"> ${mensaje_cifrado} </p>`;
-            
+        //respuesta.outerHTML = `<p class="aplicacion_resultado_texto_final"> ${mensaje_cifrado} </p>`;
+        respuesta.outerHTML = `<textarea class="aplicacion_resultado_texto_final"> ${mensaje_cifrado} </textarea>`;  
         let elem1 = document.getElementById("text_0_1");
         elem1.remove();
     
@@ -41,7 +41,7 @@ function mostrar_resultado_x(){
         insertar_boton();
 
     }else{
-        let respuesta = document.querySelector("p.aplicacion_resultado_texto_final");
+        let respuesta = document.querySelector("textarea.aplicacion_resultado_texto_final");
         respuesta.innerText = mensaje_cifrado;
     };
 
@@ -57,10 +57,10 @@ function insertar_boton(){
     const copiar = document.createElement("button");
     copiar.innerHTML = "Copiar";
     document.querySelector("div.aplicacion_resultado_boton").appendChild(copiar);
+    copiar.setAttribute("id", "copiar");
+    copiar.setAttribute("onclick", "copiar_texto_final()");
 
 }
-
-
 
 
 function encriptar (){
@@ -68,11 +68,7 @@ function encriptar (){
     mensaje = String(document.getElementById('texto_entrada').value);
     let cifrado = mensaje.split('');
 
-    console.log(mensaje);
-    console.log(cifrado);
-    
-
-
+  
     for (let x in cifrado) {
         if (vocales5.includes(cifrado[x])) {    
             if (cifrado[x]=="e"){
@@ -98,9 +94,7 @@ function encriptar (){
         };
     mensaje_cifrado = cifrado.join('');
     
-    //console.log(cifrado);
-    //console.log(mensaje);
-    //console.log(mensaje_cifrado);
+    
 
     
 
@@ -115,15 +109,12 @@ function encriptar (){
 };
 
 
-
-
 function desencriptar(){
 
     mensaje = String(document.getElementById('texto_entrada').value);
     let cifrado = mensaje.split('');
 
-    //console.log(mensaje);
-    //console.log(cifrado);
+    
     
 
 
@@ -207,9 +198,7 @@ function desencriptar(){
     
     
       
-    //console.log(cifrado);
-    //console.log(mensaje);
-    //console.log(mensaje_cifrado);
+   
 
 
     mostrar_resultado_x();
@@ -220,3 +209,24 @@ function desencriptar(){
 };
 
 
+function copiar_texto_final(){
+
+
+    //<input id="input" type="text" /> <button id="copy">Copy</button>
+
+    /*function copy() {
+        let copyText = document.querySelector("#input");
+        copyText.select();
+        document.execCommand("copy");
+      }
+      
+      document.querySelector("#copy").addEventListener("click", copy);*/
+
+      //<button onclick="copy();" class="copiar1" id="copiar1"> copiar1</button>
+
+
+    let copiar_texto = document.querySelector(".aplicacion_resultado_texto_final");
+    copiar_texto.select();
+    document.execCommand("copy");
+      
+}
