@@ -32,17 +32,22 @@ function mostrar_resultado_x(){
         let respuesta = document.getElementById("img_0");
         //respuesta.outerHTML = `<p class="aplicacion_resultado_texto_final"> ${mensaje_cifrado} </p>`;
         respuesta.outerHTML = `<textarea class="aplicacion_resultado_texto_final"> ${mensaje_cifrado} </textarea>`;  
+       
+
         let elem1 = document.getElementById("text_0_1");
         elem1.remove();
     
         let elem2 = document.getElementById("text_0_2");
         elem2.remove();
 
+        ajuste_texto_resultado()
+
         insertar_boton();
 
     }else{
         let respuesta = document.querySelector("textarea.aplicacion_resultado_texto_final");
         respuesta.innerText = mensaje_cifrado;
+        ajuste_texto_resultado()
     };
 
     
@@ -51,6 +56,26 @@ function mostrar_resultado_x(){
 
 }
 
+function ajuste_texto_resultado(){
+    let respuesta_texto = document.querySelector("textarea.aplicacion_resultado_texto_final");
+        
+    
+        respuesta_texto.style.height = 60 + 'px';
+
+        respuesta_texto.style.height = (respuesta_texto.scrollHeight + 10) + 'px';
+
+       
+      
+        /*respuesta_texto.setAttribute("rows","10");*/
+
+    let respuesta_alineacion = document.querySelector(".aplicacion_resultados_visualizacion");
+    respuesta_alineacion.style.justifyContent = "space-between";
+ 
+
+
+
+
+}
 
 function insertar_boton(){
 
@@ -122,7 +147,7 @@ function desencriptar(){
         if (vocales5.includes(cifrado[x])) {    
             if (cifrado[x]=="e"){
                 posicion= parseInt(x);
-                //console.log(posicion);
+                /*console.log(posicion);*/
                 siguiente= posicion+1;
                 //console.log(siguiente);
                 if(cifrado[siguiente]=="n" && cifrado[siguiente+1]=="t" && cifrado[siguiente+2]=="e" && cifrado[siguiente+3]=="r"){

@@ -38,6 +38,9 @@ body {
     display: flex;
     flex-direction: column;
     /*padding: 0% 5.883% 2.353% 0%;*/
+    padding: 0% 0% 2.353% 0%;
+    justify-content: space-between;
+    
         
 }
 
@@ -109,6 +112,7 @@ h1 {
     justify-content: space-between;
     padding: 0% 8.334% 0% 20.834%;
     gap: 1.5rem;
+    height: 4.1875rem;
     
 }
 
@@ -147,6 +151,8 @@ button{
     border-radius: 2rem;
     padding: 2.353% 0% 2.353% 0%;
     box-shadow: 0rem 0.5rem 0.5rem lightblue;
+    justify-content: space-between;
+    
     
 
 
@@ -186,6 +192,7 @@ button{
     text-align:center;
     gap: 1rem;
     width: 84%;
+    
 
 
 
@@ -212,13 +219,16 @@ button{
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     color: #495057;
-    padding: 0% 8% 0% 8%;
+   
     
     background-color: transparent;
     resize: none;
     border: 0 none;
     outline: none;   
     box-sizing: border-box;
+    width: 82%;
+    
+    
     
    
     
@@ -230,7 +240,8 @@ button{
 
 .aplicacion_resultado_boton{
 
-    height: 7.614%;
+    /*height: 7.614%;*/
+    height: 4.1875rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +261,7 @@ button{
 
 
 
-/*@media ( 375px >= width >= 768px) {*/
+
 
 @media (min-width: 375px) and (max-width : 768px) {
 
@@ -278,7 +289,7 @@ button{
 
     .aplicacion_ingreso{
         width: 100%;
-        height: 87%;
+        /*height: 87%;*/
         /*padding: 0% 5.883% 2.353% 0%;*/
                    
     }
@@ -293,26 +304,27 @@ button{
         
         padding: 0% 0% 0% 0%;
         gap: 1.5rem;
-        
+        height: auto;
     }
     
     button{
 
         width: 100%;
+        height: 4.1875rem;
        
         
     }
 
 
     .aplicacion_resultado {
-        height: 17%;
+        /*height: 17%;*/
         width: 100%;
     }
     
     .aplicacion_resultado_imagen_0{
         visibility: hidden;
         padding: 0% 0% 0% 0% ;
-        height: 3%;
+        height: 0.3rem;
         
 
     }
@@ -322,7 +334,7 @@ button{
     }
 
     .aplicacion_resultado_boton{
-        height: 67px;
+        height: 4.1875rem;
     
     }
 
@@ -359,7 +371,7 @@ button{
 
     .aplicacion_ingreso{
         width: 100%;
-        height: 87%;
+     /*   height: 87%;*/
         /*padding: 0% 5.883% 2.353% 0%;*/
                    
     }
@@ -386,27 +398,30 @@ button{
         padding: 0% 0% 0% 0%;
         gap: 1.5rem;
         flex-direction: column;
-        height: 9.875rem;
+        /*height: 9.875rem;*/
+        height: auto;
+        
         
     }
     
     button{
 
         width: 100%;
+        height: 4.1875rem;
        
         
     }
 
 
     .aplicacion_resultado {
-        height: 17%;
+       /* height: 17%;*/
         width: 100%;
     }
     
     .aplicacion_resultado_imagen_0{
         visibility: hidden;
         padding: 0% 0% 0% 0% ;
-        height: 3%;
+        height: 0.3rem;
         
 
     }
@@ -416,7 +431,7 @@ button{
     }
 
     .aplicacion_resultado_boton{
-        height: 67px;
+        height: 4.1875rem;
     
     }
 
