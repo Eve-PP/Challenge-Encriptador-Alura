@@ -8,12 +8,32 @@
 }
 
 header{
-    background-color: rgb(150, 250, 135);
+    background-color: lightskyblue;
+    padding: 0.5%;
+
+}
+
+
+.header_menu{
+    display: flex;
+    gap: 4rem;
+
+}
+
+.header_menu_link {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color:#0A3871;
+    text-decoration: none;
+    font-weight: 600;
+    
+
 }
 
 
 body {
     background-color: #F3F5FC;
+    
     box-sizing: border-box;
     
     height: 100vh;
@@ -21,15 +41,19 @@ body {
 
    /* width: 1440px;
     height: 1024px;
-    padding:40px;*/
-    padding: 2.8015%;
+    padding:40px;
+    padding: 2.8015%;*/
+    
 }
 
 
 .aplicacion{
     display: flex;
+    box-sizing: border-box;
+
     height: 100%;
     width: 100%;
+    padding: 2%;
     
 }
 
@@ -251,12 +275,17 @@ button{
 }
 
 
-/*.footer{
+.footer{
     background-color: lightskyblue;
-    color: darkblue;
+    color: #0A3871;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    
+    
 
-}*/
+}
 
 
 
@@ -264,6 +293,10 @@ button{
 
 
 @media (min-width: 375px) and (max-width : 768px) {
+
+    .header_menu{
+        justify-content: space-evenly;
+    }
 
     /*body {
         
@@ -279,6 +312,8 @@ button{
 
 
     }*/
+
+    
 
     .aplicacion{
         
@@ -344,6 +379,10 @@ button{
 
 @media (max-width:375px){
 
+
+    .header_menu{
+        justify-content: space-evenly;
+    }
     /*
     body {
         

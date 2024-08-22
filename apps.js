@@ -73,8 +73,6 @@ function ajuste_texto_resultado(){
  
 
 
-
-
 }
 
 function insertar_boton(){
@@ -119,16 +117,9 @@ function encriptar (){
         };
     mensaje_cifrado = cifrado.join('');
     
-    
-
-    
-
-
-  
+      
   mostrar_resultado_x();
   aux2++
-
-
 
     
 };
@@ -222,10 +213,6 @@ function desencriptar(){
     mensaje_cifrado = cifrado.join('');
     
     
-      
-   
-
-
     mostrar_resultado_x();
   aux2++
 
